@@ -3,8 +3,11 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: v.$primary-font;
   font-weight: v.$font-weight-bold;
+  color: v.$text-color;
 }
 
+
 p {
+  color:v.$text-color;
   font-size: v.$font-size-base;
 }

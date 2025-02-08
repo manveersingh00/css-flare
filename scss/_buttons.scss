@@ -18,4 +18,16 @@
     color: white;
     border: none;
   }
+
+  &.btn-danger {
+    background-color: v.$error-color;
+    color: white;
+    border: none;
+  }
+
+  &.btn-warning {
+    background-color: v.$warning-color;
+    color: white;
+    border: none;
+  }
 }
