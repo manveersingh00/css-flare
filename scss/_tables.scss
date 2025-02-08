@@ -6,7 +6,7 @@ table {
 }
 
 th, td {
-  border: 1px solid v.$primary-color;
+  border: v.$border-width-thin solid v.$primary-color;
   padding: 10px;
   text-align: left;
 }
