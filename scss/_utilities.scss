@@ -11,14 +11,14 @@
 .p-2 { padding: 10px; }
 
 // Font sizes
-.fs-small { font-size: 12px; }
+.fs-small { font-size: v.$font-size-small; }
 .fs-medium { font-size: v.$font-size-base; }
-.fs-large { font-size: 24px; }
+.fs-large { font-size: v.$font-size-large; }
 
 // Font weight
-.fw-light { font-weight: 300; }
-.fw-normal { font-weight: 400; }
-.fw-bold { font-weight: 700; }
+.fw-light { font-weight: v.$font-weight-light; }
+.fw-normal { font-weight: v.$font-weight-normal; }
+.fw-bold { font-weight: v.$font-weight-bold; }
 
 // Borders
 .border { border: 1px solid v.$primary-color; }
