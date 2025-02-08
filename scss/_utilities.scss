@@ -21,9 +21,9 @@
 .fw-bold { font-weight: v.$font-weight-bold; }
 
 // Borders
-.border { border: 1px solid v.$primary-color; }
+.border { border: v.$border-width-thin solid v.$primary-color; }
 .border-none { border: none; }
-.border-thin { border: 1px solid v.$secondary-color; }
-.border-thick { border: 3px solid v.$primary-color; }
-.border-rounded { border-radius: 5px; }
+.border-thin { border: v.$border-width-thin solid v.$secondary-color; }
+.border-thick { border: v.$border-width-thick solid v.$primary-color; }
+.border-rounded { border-radius: v.$border-radius-sm; }
 .border-circle { border-radius: 50%; }
