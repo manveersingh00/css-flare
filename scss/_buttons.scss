@@ -1,0 +1,21 @@
+@use 'variables' as v;
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: v.$font-size-base;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &.btn-primary {
+    background-color: v.$primary-color;
+    color: white;
+    border: none;
+  }
+
+  &.btn-secondary {
+    background-color: v.$secondary-color;
+    color: white;
+    border: none;
+  }
+}

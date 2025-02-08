@@ -1,0 +1,12 @@
+@use 'variables' as v;
+
+input, textarea {
+  border: 1px solid v.$secondary-color;
+  padding: 10px;
+  font-size: v.$font-size-base;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+}

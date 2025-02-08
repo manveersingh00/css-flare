@@ -1,0 +1,29 @@
+@use 'variables' as v;
+
+// Margins
+.m-0 { margin: 0; }
+.m-1 { margin: 5px; }
+.m-2 { margin: 10px; }
+
+// Padding
+.p-0 { padding: 0; }
+.p-1 { padding: 5px; }
+.p-2 { padding: 10px; }
+
+// Font sizes
+.fs-small { font-size: 12px; }
+.fs-medium { font-size: v.$font-size-base; }
+.fs-large { font-size: 24px; }
+
+// Font weight
+.fw-light { font-weight: 300; }
+.fw-normal { font-weight: 400; }
+.fw-bold { font-weight: 700; }
+
+// Borders
+.border { border: 1px solid v.$primary-color; }
+.border-none { border: none; }
+.border-thin { border: 1px solid v.$secondary-color; }
+.border-thick { border: 3px solid v.$primary-color; }
+.border-rounded { border-radius: 5px; }
+.border-circle { border-radius: 50%; }
