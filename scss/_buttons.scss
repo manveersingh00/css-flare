@@ -1,16 +1,24 @@
 @use 'variables' as v;
 
 .btn {
-  padding: 10px 20px;
-  border-radius: v.$border-radius-sm;
+  padding: 12px 24px;
+  border-radius: v.$border-radius-md;
   font-size: v.$font-size-base;
+  font-weight: v.$font-weight-bold;
+  font-family: v.$primary-font;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
   &.btn-primary {
-    background-color: v.$primary-color;
-    color: white;
+    background: linear-gradient(45deg, v.$primary-color, v.$secondary-color);
+    color: v.$text-color;
     border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    }
   }
 
   &.btn-secondary {

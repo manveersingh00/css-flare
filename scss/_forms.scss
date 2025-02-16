@@ -1,12 +1,29 @@
 @use 'variables' as v;
 
+form{
+  padding: 20px;
+}
+
 input, textarea {
   border: v.$border-width-thin solid v.$secondary-color;
-  padding: 10px;
   font-size: v.$font-size-base;
   border-radius: v.$border-radius-sm;
+  transition: all 0.3s ease-in-out;
+  height: 35px;
+  width: -webkit-fill-available;
+  display: grid;
+  margin-top: 10px;
+
+  &:focus {
+    border-color: v.$primary-color;
+    box-shadow: 0px 4px 8px rgba(255, 75, 43, 0.5);
+    outline: none;
+  }
 }
 
 label {
+  font-family: v.$primary-font;
+  padding: 10px 0px 20px 0px;
   font-weight: v.$font-weight-bold;
+  color: v.$dark-color;
 }

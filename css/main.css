@@ -1,17 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Satisfy&display=swap");
 .btn {
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Protest Revolution", serif;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .btn.btn-primary {
-  background-color: #007bff;
-  color: white;
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: #ffffff;
   border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 .btn.btn-secondary {
-  background-color: #6c757d;
+  background-color: #ff416c;
   color: white;
   border: none;
 }
@@ -27,14 +35,14 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Arial", sans-serif;
+  font-family: "Protest Revolution", serif;
   font-weight: 700;
-  color: #212529;
+  color: #ffffff;
 }
 
 p {
-  color: #212529;
-  font-size: 16px;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 ul {
@@ -57,7 +65,7 @@ table {
 }
 
 th, td {
-  border: 1px solid #007bff;
+  border: 1px solid #ff4b2b;
   padding: 10px;
   text-align: left;
 }
@@ -67,15 +75,63 @@ th {
   color: white;
 }
 
+form {
+  padding: 20px;
+}
+
 input, textarea {
-  border: 1px solid #6c757d;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
+  border: 1px solid #ff416c;
+  font-size: 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  height: 35px;
+  width: -webkit-fill-available;
+  display: grid;
+  margin-top: 10px;
+}
+input:focus, textarea:focus {
+  border-color: #ff4b2b;
+  box-shadow: 0px 4px 8px rgba(255, 75, 43, 0.5);
+  outline: none;
 }
 
 label {
+  font-family: "Protest Revolution", serif;
+  padding: 10px 0px 20px 0px;
   font-weight: 700;
+  color: #343a40;
+}
+
+.bg-primary {
+  background: #ff4b2b;
+}
+
+.bg-secondary {
+  background: #ff416c;
+}
+
+.bg-dark {
+  background: #343a40;
+}
+
+.bg-light {
+  background: #f8f9fa;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #343a40;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .m-0 {
@@ -103,15 +159,15 @@ label {
 }
 
 .fs-small {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .fs-medium {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .fs-large {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .fw-light {
@@ -127,7 +183,7 @@ label {
 }
 
 .border {
-  border: 1px solid #007bff;
+  border: 1px solid #ff4b2b;
 }
 
 .border-none {
@@ -135,7 +191,7 @@ label {
 }
 
 .border-thin {
-  border: 1px solid #6c757d;
+  border: 1px solid #ff416c;
 }
 
 .border-thick {
@@ -143,11 +199,106 @@ label {
 }
 
 .border-rounded {
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .border-circle {
   border-radius: 50%;
+}
+
+.shadow-lg {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-md {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-sm {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 1.5s ease-in-out;
+}
+
+.slide-right {
+  animation: slideRight 2s ease-in-out;
+}
+
+.slide-left {
+  animation: slideLeft 2s ease-in-out;
+}
+
+body {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  font-family: "Satisfy", serif;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=main.css.map */

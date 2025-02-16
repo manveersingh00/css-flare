@@ -4,101 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS-Flare Demo</title>
+    <title>Blood Donation Awareness</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
-    <header>
-        <h1>CSS-Flare Framework Demo</h1>
-        <p>A simple custom CSS framework built with Sass.</p>
+    <header class="p-2 bg-primary text-white text-center slide-in border-rounded">
+        <h1 class="fs-large">🩸 Donate Blood, Save Lives 💖</h1>
     </header>
 
-    <section>
-        <h2>Typography</h2>
-        <h1>Heading 1</h1>
-        <h4>Heading 4</h4>
-        <h6>Heading 6</h6>
-        <p class="fs-medium">This is a paragraph with medium font size.</p>
-    </section>
+    <div class="container">
+        <section class="p-2 fade-in slide-right">
+            <h2 class="fs-large fw-bold text-dark text-center">Why Donate Blood? 🩸</h2>
+            <p class="fs-medium text-dark">Blood donation is a simple yet powerful act that can save lives. Every few
+                seconds, someone in the world needs blood due to accidents, surgeries, cancer treatments, or medical
+                conditions like
+                anemia. By donating blood, you can make a real difference! 💖</p>
 
-    <section>
-        <h2>Lists</h2>
-        <h3>Unordered List</h3>
-        <ul class="custom-list">
-            <li>Item One</li>
-            <li>Item Two</li>
-            <li>Item Three</li>
-        </ul>
+            <ul class="text-dark">
+                <li class="fs-medium">A single blood donation can help up to three people in need. 👩‍⚕️👨‍⚕️</li>
+                <li class="fs-medium">Hospitals rely on donated blood for surgeries, trauma cases, and childbirth
+                    complications. 🏥
+                </li>
+                <li class="fs-medium">Individuals with conditions like sickle cell disease or leukemia require frequent
+                    blood
+                    transfusions. 🩸</li>
+                <li class="fs-medium">Regular blood donation can improve circulation, reduce iron levels, and even lower
+                    the risk of
+                    heart disease. ❤️</li>
+                <li class="fs-medium">Donating blood is a selfless act that directly benefits people in your community
+                    and beyond.
+                    🌍</li>
+            </ul>
 
-        <h3>Ordered List</h3>
-        <ol class="custom-list">
-            <li>First Item</li>
-            <li>Second Item</li>
-            <li>Third Item</li>
-        </ol>
-    </section>
+            <p class="fs-medium text-dark">Join the movement — donate blood today and be a hero! 🦸‍♂️🦸‍♀️💖</p>
 
-    <section>
-        <h2>Buttons</h2>
-        <button class="btn btn-primary">Primary Button</button>
-        <button class="btn btn-secondary">Secondary Button</button>
-        <button class="btn btn-danger">Danger Button</button>
-        <button class="btn btn-warning">Warning Button</button>
-    </section>
+        </section>
 
-    <section>
-        <h2>Forms</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" class="input" placeholder="Enter your name">
-            <button class="btn btn-primary">Submit</button>
-        </form>
-    </section>
+        <section class="p-2 fade-in delay-1 slide-left">
+            <h2 class="fs-large fw-bold text-dark text-center">Who Can Donate? 🩸</h2>
+            <ul class="text-dark">
+                <li class="fs-medium">Individuals aged 18-65 🧑‍🦱👩‍🦳</li>
+                <li class="fs-medium">Good general health 💪</li>
+                <li class="fs-medium">Minimum weight of 50 kg ⚖️</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Tables</h2>
-        <table class="table">
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>25</td>
-            </tr>
-        </table>
-    </section>
 
-    <section>
-        <h2>Utility Classes</h2>
-        <div class="m-2 p-2">This div has margin and padding.</div>
-        <p class="fs-large">This is a large font size paragraph.</p>
-        <p class="fw-bold border border-rounded">Bold text with a rounded border.</p>
+        <section class="p-2 fade-in delay-2 slide-right">
+            <h2 class="fs-large fw-bold text-dark text-center">How to Donate? 🩸</h2>
+            <ol class="text-dark">
+                <li class="fs-medium">Find a nearby blood donation center 🏥</li>
+                <li class="fs-medium">Register and undergo basic health screening 📝💉</li>
+                <li class="fs-medium">Donate and rest for a while 🛋️💖</li>
+            </ol>
+        </section>
 
-    </section>
 
-    <section>
-        <h2>Font Size and Font Weight</h2>
-        <p class="fs-small">This is small size font.</p>
-        <p class="fs-medium">This is a medium size font.</p>
-        <p class="fs-large">This is large size font.</p>
-        <p class="fs-small fw-light">This p has light font weight.</p>
-        <p class="fs-small fw-normal">This p has normal font weight.</p>
-        <p class="fs-small fw-bold">This p has bold font weight.</p>
-    </section>
+        <section class="p-2 fade-in delay-3">
+            <h2 class="fs-large fw-bold text-dark text-center">Register for Blood Donation 🩸</h2>
+            <form class="border shadow-lg">
+                <label for="name" class="fw-bold">Full Name: 📝</label>
+                <input type="text" id="name" name="name" required class=""><br>
 
-    <section>
-        <h2>Borders</h2>
-        <p class="border p-2">Simple border.</p>
-        <p class="border-none p-2">None border</p>
-        <p class="border-thin p-2">Thin border</p>
-        <p class="border-thick p-2">Thick border</p>
-        <p class="border-thin border-rounded p-2">Rounded border</p>
-        <p class="border-thin border-circle p-2">Circle border</p>
-    </section>
+                <label for="email" class="fw-bold">Email: 📧</label>
+                <input type="email" id="email" name="email" required class=""><br>
 
+                <label for="blood-group" class="fw-bold">Blood Group: 🩸</label>
+                <input type="text" id="blood-group" name="blood-group" required class=""><br>
+
+                <button type="submit" class="btn btn-primary btn-animate">Register 🖊️</button>
+            </form>
+        </section>
+
+
+        <section class="p-2 fade-in delay-4">
+            <h2 class="fs-large fw-bold text-dark text-center">Recent Blood Donors 🩸</h2>
+            <table class="border-thick shadow-md">
+                <tr>
+                    <th>Name 👤</th>
+                    <th>Blood Group 🩸</th>
+                    <th>Location 🌍</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>O+</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>A-</td>
+                    <td>Los Angeles</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    <footer class="p-2 bg-dark text-white text-center slide-in-bottom border-rounded">
+        <p>© 2025 Blood Donation Initiative | Help Save Lives</p>
+    </footer>
 </body>
 
 </html>
