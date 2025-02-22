@@ -9,12 +9,41 @@
 </head>
 
 <body>
-    <header class="p-2 bg-primary text-white text-center slide-in border-rounded">
+    <header class="p-2 bg-dark text-white text-center slide-in border-rounded flex-header">
         <h1 class="fs-large">🩸 Donate Blood, Save Lives 💖</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" data-target="home">Home</a></li>
+                <li><a href="#" data-target="register">Register</a></li>
+                <li><a href="#" data-target="recent-donors">Recent Donors</a></li>
+                <li><a href="#" data-target="why-donate">Why Donate</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="container">
-        <section class="p-2 fade-in slide-right">
+
+        <section id="home" class="content-section">
+            <img src="images/banner.jpg" alt="Blood Donation" class="banner-img">
+            <section class="p-2 fade-in slide-left">
+                <h2 class="fs-large fw-bold text-dark text-center">Who Can Donate? 🩸</h2>
+                <ul class="text-dark">
+                    <li class="fs-medium">Individuals aged 18-65 🧑‍🦱👩‍🦳</li>
+                    <li class="fs-medium">Good general health 💪</li>
+                    <li class="fs-medium">Minimum weight of 50 kg ⚖️</li>
+                </ul>
+            </section>
+            <section class="p-2 fade-in slide-right">
+                <h2 class="fs-large fw-bold text-dark text-center">How to Donate? 🩸</h2>
+                <ol class="text-dark">
+                    <li class="fs-medium">Find a nearby blood donation center 🏥</li>
+                    <li class="fs-medium">Register and undergo basic health screening 📝💉</li>
+                    <li class="fs-medium">Donate and rest for a while 🛋️💖</li>
+                </ol>
+            </section>
+        </section>
+
+        <section id="why-donate" class="p-2 fade-in slide-right content-section hidden">
             <h2 class="fs-large fw-bold text-dark text-center">Why Donate Blood? 🩸</h2>
             <p class="fs-medium text-dark">Blood donation is a simple yet powerful act that can save lives. Every few
                 seconds, someone in the world needs blood due to accidents, surgeries, cancer treatments, or medical
@@ -36,32 +65,11 @@
                     and beyond.
                     🌍</li>
             </ul>
-
             <p class="fs-medium text-dark">Join the movement — donate blood today and be a hero! 🦸‍♂️🦸‍♀️💖</p>
 
         </section>
 
-        <section class="p-2 fade-in delay-1 slide-left">
-            <h2 class="fs-large fw-bold text-dark text-center">Who Can Donate? 🩸</h2>
-            <ul class="text-dark">
-                <li class="fs-medium">Individuals aged 18-65 🧑‍🦱👩‍🦳</li>
-                <li class="fs-medium">Good general health 💪</li>
-                <li class="fs-medium">Minimum weight of 50 kg ⚖️</li>
-            </ul>
-        </section>
-
-
-        <section class="p-2 fade-in delay-2 slide-right">
-            <h2 class="fs-large fw-bold text-dark text-center">How to Donate? 🩸</h2>
-            <ol class="text-dark">
-                <li class="fs-medium">Find a nearby blood donation center 🏥</li>
-                <li class="fs-medium">Register and undergo basic health screening 📝💉</li>
-                <li class="fs-medium">Donate and rest for a while 🛋️💖</li>
-            </ol>
-        </section>
-
-
-        <section class="p-2 fade-in delay-3">
+        <section id="register" class="p-2 fade-in content-section hidden">
             <h2 class="fs-large fw-bold text-dark text-center">Register for Blood Donation 🩸</h2>
             <form class="border shadow-lg">
                 <label for="name" class="fw-bold">Full Name: 📝</label>
@@ -78,7 +86,7 @@
         </section>
 
 
-        <section class="p-2 fade-in delay-4">
+        <section id="recent-donors" class="p-2 fade-in content-section hidden">
             <h2 class="fs-large fw-bold text-dark text-center">Recent Blood Donors 🩸</h2>
             <table class="border-thick shadow-md">
                 <tr>
@@ -104,6 +112,8 @@
     <footer class="p-2 bg-dark text-white text-center slide-in-bottom border-rounded">
         <p>© 2025 Blood Donation Initiative | Help Save Lives</p>
     </footer>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
